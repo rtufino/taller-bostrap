@@ -22,5 +22,13 @@
     "genero": "Acción",
     "sinopsis": "La película comienza con el violento robo de uno de los bancos de la mafia por una banda de payasos.",
     "trailer": "https://www.youtube.com/embed/dzQtWkpc2-c"
+  },
+  {
+    "id": 4,
+    "titulo": "Avatar 3: Fuego y Ceniza",
+    "imagen": "avatarfondo2.webp",
+    "genero": "Acción",
+    "sinopsis": "sigue a la familia Sully mientras enfrenta el dolor por la muerte de Neteyam y un nuevo enemigo: el Pueblo de Ceniza, una tribu Na'vi violenta y agresiva liderada por Varang. Este nuevo clan está aliado con el Coronel Quaritch y usará el fuego para sus propósitos, intensificando el conflicto en Pandora y obligando a los Sully a luchar por su supervivencia en una historia que aborda temas morales más complejos. ",
+    "trailer": "https://www.youtube.com/embed/bf38f_JINyw"
   }
 ]

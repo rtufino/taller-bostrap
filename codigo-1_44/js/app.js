@@ -1,12 +1,14 @@
 $(document).ready(function () {
+  // Llamada Ajax
     $.ajax({
       url: "data/peliculas.json",
       method: "GET",
       dataType: "json",
       success: function (peliculas) {
-        let html = "";
+        let texto_html = '<div class="row p-2">';
+        let i=0
         peliculas.forEach(function (peli) {
-          html += `
+          texto_html += `
             <div class="col-md-4">
               <div class="card h-100 shadow">
                 <img src="img/${peli.imagen}" class="card-img-top" alt="${peli.titulo}">
@@ -17,8 +19,13 @@ $(document).ready(function () {
                 </div>
               </div>
             </div>`;
+            i++;
+            if (i%3==0){
+              texto_html += `</div><div class="row p-2">`;
+            }
         });
-        $("#lista-peliculas").html(html);
+        texto_html += '</div>';
+        $("#lista-peliculas").html(texto_html);
       },
       error: function (xhr, status, error) {
         console.error("Error al cargar las películas:", error);
